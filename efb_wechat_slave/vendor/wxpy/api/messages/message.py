@@ -194,6 +194,13 @@ class Message(object):
         return self.raw.get('ImgWidth')
 
     @property
+    def ticket(self):
+        """
+        表情代号
+        """
+        return self.raw.get('Ticket')
+
+    @property
     def play_length(self):
         """
         视频长度
