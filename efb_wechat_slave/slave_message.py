@@ -405,6 +405,8 @@ class SlaveMessageManager:
             efb_msg.text += self._("[Failed to download the picture, please check your phone.]")
             efb_msg.text += "\n The picture name is :"
             efb_msg.text += msg.file_name
+            efb_msg.text += "\n The picture path is :"
+            efb_msg.text += msg.path
             efb_msg.type = MsgType.Unsupported
 
         return efb_msg
