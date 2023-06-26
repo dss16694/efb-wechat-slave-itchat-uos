@@ -406,7 +406,9 @@ class SlaveMessageManager:
             efb_msg.text += "\n The picture name is :"
             efb_msg.text += msg.file_name
             efb_msg.text += "\n The picture path is :"
-            efb_msg.text += msg.ticket
+            efb_msg.text += msg.img_width
+            efb_msg.text += "-"
+            efb_msg.text += msg.img_height
             efb_msg.type = MsgType.Unsupported
 
         return efb_msg
